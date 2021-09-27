@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace _19342313_G_Kruger_GADE6112_TASK1
 {
     class Map
-    {
+    { //Declarations 
         private Tile[,] map { get; set; }
         private Hero hero;
         private Enemy[] enemies;
@@ -56,7 +56,7 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
             }
 
         }
-
+        //Create method for Tiles
         private Tile Create(Tile.TileType type)
         {
             switch (type)
@@ -76,7 +76,7 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
             }
             return null;
         }
-
+        //Update Vision for Character
         public void UpdateVision()
         {
             UpdateCharacterVision(hero);

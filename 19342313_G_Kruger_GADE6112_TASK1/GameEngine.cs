@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 namespace _19342313_G_Kruger_GADE6112_TASK1
 {
     class GameEngine
-    {
+    {   //Map Declaration 
         private Map map;
-
+        //Calls Map from Map Class
         public Map Map
         {
             get => map;
         }
-
+     
         public GameEngine(int minWidth, int maxWidth, int minHeight, int maxHeight, int enemyAmount)
         {
             map = new Map(minWidth, maxWidth, minHeight, maxHeight, enemyAmount);
         }
-
+        //Player Movement Boolean
         public bool MovePlayer(Character.EnumMovement direction)
         {
             if (direction == Character.EnumMovement.Left)

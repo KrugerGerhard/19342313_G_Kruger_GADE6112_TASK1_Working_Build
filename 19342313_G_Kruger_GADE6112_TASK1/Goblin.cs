@@ -12,8 +12,9 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
         {
             tiletype0 = TileType.Goblin;
         }
+        //Movement Enum specific to Goblin
         EnumMovement GoblinMovement;
-
+        //Movement for Goblins
         public override EnumMovement ReturnMove(EnumMovement move)
         {
             int randomnum0 = random.Next(0, 4);

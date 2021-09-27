@@ -14,12 +14,12 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
         protected char symbol; //Character Symbol for each of the Tile Types
         protected bool isdead;  // Boolean for Death True/False check.
         public Tile[] player_vision; // Vision up, down, left and right around player.
-
+        //Accessors
         public int HP { get; set; }
         public int MaxHP { get; set; }
         public int Damage { get; set; }
         protected Tile[] playerVision { get; set; }
-
+        //Tile Accessor
         public Tile[] Vision
         {
             get => playerVision;

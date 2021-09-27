@@ -27,8 +27,10 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
             Enemy,
             Goblin,
             Weapon,
+            Obstacle,
+            EmptyTile
         }
-
+        //Tiletypes get & set for different tile types 
         public TileType tiletype0 { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
             gameEngine = new GameEngine(6, 8, 6, 8, 5);
             updateMap();
         }
-
+        //Update map method
         public void updateMap()
         {
             string mapResult = "";
@@ -50,10 +50,10 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
                 }
                 mapResult += "\n\n";
             }
-            map_label.Text = mapResult;
+            map_label.Text = mapResult; //Display for Map on Label
             UpdateHeroStats();
         }
-
+        //Update for Hero statistics 
         private void UpdateHeroStats()
         {
             playerstats_label.Text = gameEngine.Map.Hero.ToString();
@@ -63,7 +63,7 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
         {
 
         }
-
+        //Attempt at getting Arrow Keys working for Movement //Also added in buttons at last second for possible replacement of controller in later tasks
         private void FrmGameView_KeyDown(object sender, KeyEventArgs e)
         {
             Console.WriteLine("moved");
@@ -89,7 +89,7 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
                     gameEngine.Map.UpdateVision();
                 }
             }
-            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
+            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D) 
             {
                 if (gameEngine.MovePlayer(Character.EnumMovement.Right))
                 {
