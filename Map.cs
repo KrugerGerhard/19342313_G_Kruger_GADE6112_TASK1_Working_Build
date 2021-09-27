@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _19342313_G_Kruger_GADE6112_TASK1
 {
-    class Map
+    class Map //NOTE! This is the Important Grid
     {
     }
 }
