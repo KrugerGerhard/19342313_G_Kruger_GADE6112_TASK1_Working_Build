@@ -8,7 +8,7 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
 {
     public class Obstacle : Tile // Class for Obstacles 
     {
-        public Obstacle(int X, int Y) : base(X, Y)
+        public Obstacle(int X, int Y) : base(X, Y) //X & Y values related to Mapping
         {
 
         }
