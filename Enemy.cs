@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace _19342313_G_Kruger_GADE6112_TASK1
 {
-    abstract class Enemy : Character
+    abstract class Enemy : Character //Class for Different Enemy Tile types
     {
-        protected Random random = new Random();
+        protected Random random = new Random(); //Generates a random amount of enemies
 
-        public Enemy(int x, int y, int maxhp, int damage, char symbol) : base (x,y,maxhp, damage, symbol)
+        public Enemy(int x, int y, int maxhp, int damage, char symbol) : base (x,y,maxhp, damage, symbol) //Enemy constructor
         {
 
         }
 
-        public override string ToString()
+        public override string ToString() //ToString for relating Enemy Data to Form
         {
             return this.GetType().Name + " at " + this.X + this.Y + this.damage;
         }
