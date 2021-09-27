@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _19342313_G_Kruger_GADE6112_TASK1
 {
-    abstract class Character : Tile
+    abstract class Character : Tile //Abstract Class for Character
     {    //Protected Integers alongside the Death Boolean, Char symbol for Characters and Vision
         protected int hp; // Integer for HP
         protected int maxhp; // Integer for Maximum Health Points
@@ -26,7 +26,7 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
 
         }
 
-        //Attack
+        //Attack method 
         public virtual void Attack(Character target)
         {
             target.HP--;
@@ -56,7 +56,7 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
             }
         }
 
-        //Check Range.
+        //Check Range for characters 
         private int DistanceTo(Character target)
         {
             int distance = (this.X - target.X) + (this.Y - target.Y);
@@ -65,7 +65,7 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
         }
 
 
-        // Movement Enums
+        // Movement Enums that relate to all characters 
         public enum EnumMovement
         {
             NoMovement,
@@ -74,7 +74,7 @@ namespace _19342313_G_Kruger_GADE6112_TASK1
             Left,
             Right
         }
-        //Movement 
+        //Movement for Characters
         public void Move(EnumMovement move)
         {
             if (move == EnumMovement.Down)
