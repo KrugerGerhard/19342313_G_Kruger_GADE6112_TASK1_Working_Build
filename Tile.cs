@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _19342313_G_Kruger_GADE6112_TASK1
 {
-    public abstract class Tile
+    public abstract class Tile //Public Abstract Class for Tiles
     {
         protected int x;
         protected int y;
